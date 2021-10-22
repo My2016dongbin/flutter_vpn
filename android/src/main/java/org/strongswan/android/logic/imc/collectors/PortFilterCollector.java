@@ -50,7 +50,7 @@ public class PortFilterCollector implements Collector
 					{
 						continue;
 					}
-					Matcher protocolMatcher = PROTOCOL.matcher(line)
+					Matcher protocolMatcher = PROTOCOL.matcher(line);
 					Matcher portMatcher = PORT.matcher(line);
 					if (protocolMatcher.find() && portMatcher.find())
 					{
