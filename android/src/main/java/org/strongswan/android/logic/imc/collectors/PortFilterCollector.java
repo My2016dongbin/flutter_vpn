@@ -63,11 +63,11 @@ public class PortFilterCollector implements Collector
 						int port = 443;//
 						attribute.addPort(protocol, (short)port);
 					}else{//
-						Protocol protocol = Protocol.fromName(protocolMatcher.group());
-						if (protocol == null)
-						{
-							continue;
-						}
+						Protocol protocol = Protocol.fromName(protocolMatcher.group());//
+						if (protocol == null)//
+						{//
+							continue;//
+						}//
 						int port = 443;//
 						attribute.addPort(protocol, (short)port);//
 					}//
